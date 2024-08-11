@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="16dp">
+
+
+    <ImageView
+        android:id="@+id/header_cover"
+        android:layout_width="140dp"
+        android:layout_height="143dp"
+        android:src="@drawable/splashlogo"
+        android:padding="5dp"
+        android:background="@drawable/rounded_corners"
+        android:adjustViewBounds="true"
+        android:contentDescription="Cover"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/header_book_title"
+        android:layout_width="140dp"
+        android:layout_height="17dp"
+        android:text="title place holder"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/header_book_author"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:text="author placeholder"
+        android:textColor="@color/gray"
+        android:textSize="12sp" />
+
+</LinearLayout>

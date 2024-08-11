@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.hearehere.Login.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_signUp"
+            app:destination="@id/signUp" />
+        <action
+            android:id="@+id/action_login_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.example.hearehere.Register.SignUp"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUp_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.hearehere.home.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_homeIcon"
+            app:destination="@id/homeIcon" />
+        <action
+            android:id="@+id/action_home2_to_searchIcon"
+            app:destination="@id/searchIcon" />
+        <action
+            android:id="@+id/action_home2_to_libraryIcon"
+            app:destination="@id/libraryIcon" />
+        <action
+            android:id="@+id/action_home2_to_aboutBook"
+            app:destination="@id/aboutBook" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeIcon"
+        android:name="com.example.hearehere.HomeIcon"
+        android:label="fragment_home_icon"
+        tools:layout="@layout/fragment_home_icon" />
+    <fragment
+        android:id="@+id/searchIcon"
+        android:name="com.example.hearehere.SearchIcon"
+        android:label="fragment_search_icon"
+        tools:layout="@layout/fragment_search_icon" />
+    <fragment
+        android:id="@+id/libraryIcon"
+        android:name="com.example.hearehere.LibraryIcon"
+        android:label="fragment_library_icon"
+        tools:layout="@layout/fragment_library_icon" />
+    <fragment
+        android:id="@+id/aboutBook"
+        android:name="com.example.hearehere.AboutBook.AboutBook"
+        android:label="fragment_about_book"
+        tools:layout="@layout/fragment_about_book" />
+</navigation>
