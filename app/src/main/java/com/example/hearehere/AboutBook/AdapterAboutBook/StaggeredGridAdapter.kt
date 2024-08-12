@@ -7,7 +7,7 @@ import android.view.ViewGroup
 
 import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
-import com.example.hearehere.Model.AboutBookData
+import com.example.hearehere.models.AboutBookData
 import com.example.hearehere.R
 
 class StaggeredGridAdapter (private val context: Context,

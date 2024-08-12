@@ -5,8 +5,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 
-import com.example.hearehere.home.Repository.HomeDataRepository
-import com.example.hearehere.Model.HomeUserData
+import com.example.hearehere.home.repository.HomeDataRepository
+import com.example.hearehere.models.HomeUserData
 
 import kotlinx.coroutines.launch
 
@@ -19,6 +19,10 @@ class HomeDataViewModel:ViewModel() {
 
     private val _error =MutableLiveData<String>()
     val error: LiveData<String> get() = _error
+
+    private val _booksPagingData = MutableLiveData<List<HomeUserData.Data.Data.Book>>()
+    val booksPagingData: LiveData<List<HomeUserData.Data.Data.Book>> get() = _booksPagingData
+
 
 //    val booksPagingData: Flow<PagingData<HomeUserData.Data.Data.Book>> = Pager(
 //        config = PagingConfig( pageSize = 10, enablePlaceholders = false),
@@ -38,6 +42,16 @@ class HomeDataViewModel:ViewModel() {
                 _error.postValue(e.message)
             }
 
+        }
+    }
+    fun fetchBookPagingData(page: Int, size: Int) {
+        viewModelScope.launch {
+            try {
+                val books = repository.fetchBookPaging(page, size)
+                _booksPagingData.postValue(books)
+            } catch (e: Exception) {
+                _error.postValue(e.message)
+            }
         }
     }
 

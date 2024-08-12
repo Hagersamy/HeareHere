@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.hearehere.Model.AboutBookData
+import com.example.hearehere.models.AboutBookData
 import com.example.hearehere.R
 
 class AboutBooksAdapter(private val context: Context,

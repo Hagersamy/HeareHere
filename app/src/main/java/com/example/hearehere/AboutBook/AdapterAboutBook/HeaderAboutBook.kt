@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.hearehere.Model.AboutBookData
+import com.example.hearehere.models.AboutBookData
 import com.example.hearehere.R
 
 class HeaderAboutBook(private val context: Context,

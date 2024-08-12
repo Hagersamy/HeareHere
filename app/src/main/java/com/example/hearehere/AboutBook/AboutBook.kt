@@ -21,7 +21,7 @@ import com.example.hearehere.AboutBook.AdapterAboutBook.AboutBooksAdapter
 import com.example.hearehere.AboutBook.AdapterAboutBook.HeaderAboutBook
 import com.example.hearehere.AboutBook.AdapterAboutBook.StaggeredGridAdapter
 import com.example.hearehere.AboutBook.view_model.AbouBookDataViewModel
-import com.example.hearehere.Model.AboutBookData
+import com.example.hearehere.models.AboutBookData
 import com.example.hearehere.R
 import com.example.hearehere.databinding.FragmentAboutBookBinding
 
@@ -104,7 +104,7 @@ class AboutBook : Fragment() {
 
         staggeredGridAdapter = StaggeredGridAdapter(requireContext(), categories)
         binding.categoryRecyclerView.layoutManager=
-            StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.HORIZONTAL)
+            StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
         binding.categoryRecyclerView.adapter = staggeredGridAdapter
         observeBookData()
         observeError()

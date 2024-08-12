@@ -1,6 +1,6 @@
 package com.example.hearehere.AboutBook.Repositort
 
-import com.example.hearehere.Model.AboutBookData
+import com.example.hearehere.models.AboutBookData
 import retrofit2.http.GET
 import retrofit2.http.Path
 

@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.hearehere.AboutBook.Repositort.AboutBookDataRepository
-import com.example.hearehere.Model.AboutBookData
+import com.example.hearehere.models.AboutBookData
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

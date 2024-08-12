@@ -2,7 +2,7 @@ package com.example.hearehere.home.paging
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.example.hearehere.Model.HomeUserData
+import com.example.hearehere.models.HomeUserData
 
 class HomePagingSource (private val fetchBooks: suspend (page: Int, size: Int) -> List<HomeUserData.Data.Data.Book>):
   PagingSource<Int, HomeUserData.Data.Data.Book>() {

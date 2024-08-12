@@ -1,10 +1,6 @@
 package com.example.hearehere.AboutBook.Repositort
 
-import androidx.paging.Pager
-import androidx.paging.PagingConfig
-import androidx.paging.liveData
-import com.example.hearehere.AboutBook.Paging.BookPagingSource
-import com.example.hearehere.Model.AboutBookData
+import com.example.hearehere.models.AboutBookData
 
 
 class AboutBookDataRepository {

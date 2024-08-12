@@ -2,8 +2,7 @@ package com.example.hearehere.AboutBook.Paging
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.bumptech.glide.load.engine.Resource
-import com.example.hearehere.Model.AboutBookData
+import com.example.hearehere.models.AboutBookData
 
 class BookPagingSource(private val fetchBooks: suspend (page: Int, size: Int) -> List<AboutBookData.Data.Category>):
     PagingSource<Int, AboutBookData.Data.Category>() {
