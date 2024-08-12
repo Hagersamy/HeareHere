@@ -1,11 +1,11 @@
-package com.example.hearehere.register.view_model
+package com.example.hearehere.register.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.hearehere.models.RegisterData
-import com.example.hearehere.register.repository.RegisterDataRepository
+import com.example.hearehere.register.repo.RegisterDataRepository
 import kotlinx.coroutines.launch
 
 class RegisterDataViewModel():ViewModel() {

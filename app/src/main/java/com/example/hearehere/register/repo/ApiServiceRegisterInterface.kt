@@ -1,4 +1,4 @@
-package com.example.hearehere.register.repository
+package com.example.hearehere.register.repo
 
 import com.example.hearehere.models.RegisterData
 import retrofit2.http.Body

@@ -1,11 +1,12 @@
-package com.example.hearehere.home.view_model
+package com.example.hearehere.home.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.hearehere.home.repo.HomeDataRepository
 
-import com.example.hearehere.home.repository.HomeDataRepository
+
 import com.example.hearehere.models.HomeUserData
 
 import kotlinx.coroutines.launch

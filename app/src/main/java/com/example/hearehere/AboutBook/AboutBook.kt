@@ -15,12 +15,13 @@ import androidx.appcompat.widget.Toolbar
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.bumptech.glide.Glide
 import com.example.hearehere.AboutBook.AdapterAboutBook.AboutBooksAdapter
 import com.example.hearehere.AboutBook.AdapterAboutBook.HeaderAboutBook
 import com.example.hearehere.AboutBook.AdapterAboutBook.StaggeredGridAdapter
-import com.example.hearehere.AboutBook.view_model.AbouBookDataViewModel
+import com.example.hearehere.AboutBook.viewmodel.AbouBookDataViewModel
 import com.example.hearehere.models.AboutBookData
 import com.example.hearehere.R
 import com.example.hearehere.databinding.FragmentAboutBookBinding
@@ -95,21 +96,30 @@ class AboutBook : Fragment() {
         val categories = mutableListOf(
             AboutBookData.Data.Category(1, "Novel"),
             AboutBookData.Data.Category(2, "Fiction"),
-            AboutBookData.Data.Category(3, "Japanese")
-            // Add more categories as needed
+            AboutBookData.Data.Category(3, "Japanese") ,
+            AboutBookData.Data.Category(4, "Japanese")
         )
         binding.aboutBookRv.layoutManager = LinearLayoutManager(context )//,LinearLayoutManager.VERTICAL,false)
         val adapter = HeaderAboutBook(requireContext(), dummyData)
         binding.aboutBookRv.adapter = adapter
 
         staggeredGridAdapter = StaggeredGridAdapter(requireContext(), categories)
-        binding.categoryRecyclerView.layoutManager=
-            StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+        binding.categoryRecyclerView.layoutManager= StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
         binding.categoryRecyclerView.adapter = staggeredGridAdapter
+
+        binding.categoryRecyclerView.post {
+            val itemHeight = staggeredGridAdapter.getItemHeight()
+            val totalHeight = itemHeight * adapter.itemCount
+
+            val params = binding.categoryRecyclerView.layoutParams
+            params.height = totalHeight
+            binding.categoryRecyclerView.layoutParams = params
+        }
         observeBookData()
         observeError()
 
     }
+
 
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

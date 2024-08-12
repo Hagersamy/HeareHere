@@ -1,4 +1,4 @@
-package com.example.hearehere.home.repository
+package com.example.hearehere.home.repo
 
 import com.example.hearehere.models.HomeUserData
 import kotlinx.coroutines.Dispatchers

@@ -1,4 +1,4 @@
-package com.example.hearehere.home.adapter_home
+package com.example.hearehere.home
 
 import android.content.Context
 import android.view.LayoutInflater

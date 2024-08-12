@@ -1,4 +1,4 @@
-package com.example.hearehere.AboutBook.view_model
+package com.example.hearehere.AboutBook.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

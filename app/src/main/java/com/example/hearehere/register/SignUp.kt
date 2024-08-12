@@ -10,7 +10,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.hearehere.R
-import com.example.hearehere.register.view_model.RegisterDataViewModel
+import com.example.hearehere.register.viewmodel.RegisterDataViewModel
 import com.example.hearehere.databinding.FragmentSignUpBinding
 
 class SignUp : Fragment() {

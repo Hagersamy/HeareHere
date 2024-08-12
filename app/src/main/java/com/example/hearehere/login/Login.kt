@@ -9,9 +9,9 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import com.example.hearehere.login.view_model.LoginDataViewModel
 import com.example.hearehere.R
 import com.example.hearehere.databinding.FragmentLoginBinding
+import com.example.hearehere.login.viewmodel.LoginDataViewModel
 
 
 class Login : Fragment() {

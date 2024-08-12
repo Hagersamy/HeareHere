@@ -1,4 +1,4 @@
-package com.example.hearehere.register.view_model
+package com.example.hearehere.register.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

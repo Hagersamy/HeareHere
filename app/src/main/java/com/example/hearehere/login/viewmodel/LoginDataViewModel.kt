@@ -1,10 +1,10 @@
-package com.example.hearehere.login.view_model
+package com.example.hearehere.login.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.hearehere.login.repository.LoginDataRepository
+import com.example.hearehere.login.repo.LoginDataRepository
 import com.example.hearehere.models.LoginData
 import kotlinx.coroutines.launch
 

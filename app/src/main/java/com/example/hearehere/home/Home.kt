@@ -13,11 +13,11 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.hearehere.home.adapter_home.AdapterHome1
-import com.example.hearehere.home.view_model.HomeDataViewModel
 import com.example.hearehere.models.HomeUserData
 import com.example.hearehere.R
 import com.example.hearehere.databinding.FragmentHomeBinding
+import com.example.hearehere.home.adapter_home.AdapterHome1
+import com.example.hearehere.home.viewmodel.HomeDataViewModel
 
 
 class Home : Fragment() {
@@ -335,59 +335,4 @@ class Home : Fragment() {
 
     }
 
-
-        /*
-                val bottomNavigationView: BottomNavigationView = view.findViewById(R.id.bottomNavView)
-
-                val homeMenuItem = bottomNavigationView.menu.findItem(R.id.home)
-                val searchMenuItem = bottomNavigationView.menu.findItem(R.id.search)
-                val libraryMenuItem = bottomNavigationView.menu.findItem(R.id.library)
-
-                // Set a listener for item selection
-                bottomNavigationView.setOnNavigationItemSelectedListener { item ->
-                    when (item.itemId) {
-                        R.id.search -> {
-                            findNavController().navigate(R.id.action_home2_to_searchIcon)
-                            true
-                        }
-                        R.id.library -> {
-                            findNavController().navigate(R.id.action_home2_to_libraryIcon)
-                            true
-                        }
-                        else -> false
-                    }
-                }
-         */
-
-/*
-    private fun setNav() {
-        val bottomNavigationView: BottomNavigationView = view.findViewById(R.id.bottomNavView)
-
-        val homeMenuItem = bottomNavigationView.menu.findItem(R.id.home)
-        val searchMenuItem = bottomNavigationView.menu.findItem(R.id.search)
-        val libraryMenuItem = bottomNavigationView.menu.findItem(R.id.library)
-
-        // Set a listener for item selection
-        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
-            when (item.itemId) {
-                R.id.home -> {
-                    findNavController().navigate(R.id.action_home2_to_homeIcon)
-                    true
-                }
-
-                R.id.search -> {
-                    findNavController().navigate(R.id.action_home2_to_searchIcon)
-                    true
-                }
-
-                R.id.library -> {
-                    findNavController().navigate(R.id.action_home2_to_libraryIcon)
-                    true
-                }
-
-                else -> false
-            }
-        }
-      }
- */
 

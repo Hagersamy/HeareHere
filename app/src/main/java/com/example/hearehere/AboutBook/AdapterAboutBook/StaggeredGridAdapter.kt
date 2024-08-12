@@ -4,7 +4,6 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
 import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
 import com.example.hearehere.models.AboutBookData
@@ -32,5 +31,10 @@ class StaggeredGridAdapter (private val context: Context,
 
     override fun getItemCount(): Int {
         return categories.size
+    }
+    fun getItemHeight(): Int {
+        val view = LayoutInflater.from(context).inflate(R.layout.categories, null)
+        view.measure(View.MeasureSpec.UNSPECIFIED, View.MeasureSpec.UNSPECIFIED)
+        return view.measuredHeight
     }
 }
